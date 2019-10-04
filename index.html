@@ -11,23 +11,23 @@
 
 <body>
     <div class="title">
-        <hi id="title">Survey Form</hi>
+        <h1 id="title">Survey Form</h1>
     </div>
     <div class="container">
         <p id="description">Please, give us your feedback!</p>
         <form id="survey-form">
             <div class="cont">
-                <label for="name-label">Name:</label>
-                <input type="text" id="name" placeholder="enter your name">
+                <label for="name-label" id="name-label">Name:</label>
+                <input type="text" required id="name" placeholder="enter your name">
             </div>
 
             <div class="cont">
-                <label for="email-label">Email:</label>
+                <label for="email-label" id="email-label">Email:</label>
                 <input type="email" required id="email" placeholder="enter your email">
             </div>
 
             <div class="cont">
-                <label for="number-label">Age:</label>
+                <label for="number-label" id="number-label">Age:</label>
                 <input type="number" id="number" min="13" max="100" placeholder="enter your age">
                 
             </div>
@@ -59,7 +59,7 @@
                 <textarea name="comments">Feel free to add comments here!</textarea>
             </div>
 
-            <input type="submit" value="Submit">
+            <button id="submit">Submit</button>
         </form>
     </div>
 
