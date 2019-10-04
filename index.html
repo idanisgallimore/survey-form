@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="title">
+        <hi id="title">Survey Form</hi>
+    </div>
+    <div class="container">
+        <p id="description">Please, give us your feedback!</p>
+        <form id="survey-form">
+            <div class="cont">
+                <label for="name-label">Name:</label>
+                <input type="text" id="name" placeholder="enter your name">
+            </div>
+
+            <div class="cont">
+                <label for="email-label">Email:</label>
+                <input type="email" required id="email" placeholder="enter your email">
+            </div>
+
+            <div class="cont">
+                <label for="number-label">Age:</label>
+                <input type="number" id="number" min="13" max="100" placeholder="enter your age">
+                
+            </div>
+
+            <div class="cont">
+                <label for="role">What is your role:</label>
+                <select name="role" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="hobbyist">Hobbyist</option>
+                </select>
+            </div>
+
+            <div class="cont">
+                <label for="radio-label">Would you come back?:</label>
+                <input type="radio" name="radio" value="Yes">Yes<br>
+                <input type="radio" name="radio" value="No">No<br>
+                <input type="radio" name="radio" value="Maybe">Maybe<br>
+            </div>
+
+            <div class="cont">
+                <label for="checkboxes">Things you would like:</label>
+                <input type="checkbox" name="want" value="More money">More money<br>
+                <input type="checkbox" name="want" value="Mountains of Candy">Mountains of Candy<br>
+                <input type="checkbox" name="want" value="Unlimited free Netflix">Unlimited free Netflix<br>
+            </div>
+            
+            <div class="cont">
+                <textarea name="comments">Feel free to add comments here!</textarea>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!-- Test stuff -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
